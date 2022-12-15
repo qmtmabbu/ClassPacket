@@ -4,19 +4,19 @@ import com.google.gson.annotations.SerializedName
 
 class IPResponse {
     @SerializedName("IP")
-    var IP: IPData? = null
-    @SerializedName("hostname")
-    var hostname: Hostname? = null
+    var ip: IPData? = null
+    @SerializedName("postal")
+    var postal: Place? = null
     @SerializedName("continent")
-    var continent: Place? = null
+    var continent_code: Place? = null
     @SerializedName("country")
     var country: Place? = null
     @SerializedName("region")
     var region: Place? = null
     @SerializedName("city")
     var city: Place? = null
-    @SerializedName("longtitude")
-    var longtitude: Coords? = null
+    @SerializedName("longitude")
+    var longitude: Coords? = null
     @SerializedName("latitude")
     var latitude: Coords? = null
     @SerializedName("name")
@@ -28,10 +28,6 @@ class IPResponse {
 class IPData {
     @SerializedName("id")
     var id: Int = 0
-    @SerializedName("main")
-    var main: String? = null
-    @SerializedName("description")
-    var description: String? = null
 }
 
 class Sys{
@@ -39,25 +35,23 @@ class Sys{
     var Sys: String? = null
 }
 
-class Hostname{
-    @SerializedName("continent")
-    var hostname: String? = null
-}
 
 class Place {
     @SerializedName("continent")
-    var continent: String? = null
+    var continent_code: String? = null
     @SerializedName("country")
     var country: String? = null
     @SerializedName("region")
     var region: String? = null
     @SerializedName("city")
     var city: String? = null
+    @SerializedName("postal")
+    var postal: String? = null
 }
 
 class Coords{
-    @SerializedName("longtitude")
-    var longtitude: Coords? = null
+    @SerializedName("longitude")
+    var longitude: Coords? = null
     @SerializedName("latitude")
     var latitude: Coords? = null
 }
