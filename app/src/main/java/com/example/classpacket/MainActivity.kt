@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.classpacket.databinding.ActivityMainBinding
 import com.example.classpacket.home.HomeFragment
 import com.example.classpacket.login.LoginFragment
-import com.example.classpacket.IP.IP
+import com.example.classpacket.IP.IPActivity
 import com.example.classpacket.menu.AboutFragment
 import com.example.classpacket.menu.FAQFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -55,14 +55,14 @@ class MainActivity : AppCompatActivity() {
         bottomNavView = binding.bottomNavView
 
         val homeFragment = HomeFragment()
-        val IP = IP ()
+        val IP = IPActivity ()
 
         setThatFragment(homeFragment)
 
         bottomNavView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.bottom_nav_home -> {setThatFragment(homeFragment)}
-                R.id.bottom_nav_packet -> {setThatFragment(IP)}
+                R.id.bottom_nav_packet -> {setThatFragment(fragment)}
             }
             true
         }

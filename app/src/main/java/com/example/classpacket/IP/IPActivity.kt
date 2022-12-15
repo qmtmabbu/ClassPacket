@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.text.SimpleDateFormat
 import java.util.*
 
-class Weather: AppCompatActivity() {
+class IPActivity: AppCompatActivity() {
     private var IP: TextView? = null
     private var hostname: TextView? = null
     private var continent: TextView? = null
@@ -39,7 +39,7 @@ class Weather: AppCompatActivity() {
             getCurrentData()
         }
         val actionbar = supportActionBar
-        actionbar!!.title = "Weather"
+        actionbar!!.title = "IP"
         actionbar.setDisplayHomeAsUpEnabled(true)
     }
 
@@ -49,7 +49,7 @@ class Weather: AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val service = retrofit.create(IPService::class.java)
-        val call = service.getCurrentIPData(ip, hostname, APPId)
+        val call = service.getCurrentIPData()
         call.enqueue(object : Callback<IPResponse> {
             override fun onResponse(
                 call: Call<IPResponse>,
@@ -58,27 +58,23 @@ class Weather: AppCompatActivity() {
                 if (response.code() == 200) {
                     val IPResponse = response.body()!!
 
-                    val IP = IPResponse.name + ", " + IPResponse.Sys!!.country
-                    val hostname =IPResponse.hostname!!
-                    val updatedAt = IPResponse.dt.toLong()
-                    val upd = "Updated at: " + SimpleDateFormat(
-                        "MM/dd/yyyy hh:mm a",
-                        Locale.ENGLISH
-                    ).format(Date(updatedAt * 1000))
-                    val longtitude = "Min Temp: " + IPResponse.main!!.temp_min + "°C"
-                    val latitude = "Max Temp: " + IPResponse.main!!.temp_max + "°C"
-                    val humid = IPResponse.main!!.humidity
-                    val hpa = IPResponse.main!!.pressure
-                    val speed = IPResponse.wind!!.speed
+                    val IP = IPResponse.IP
+                    val hostname = IPResponse.hostname
+                    val continent = IPResponse.continent
+                    val country = IPResponse.country
+                    val region = IPResponse.region
+                    val city =IPResponse.city
+                    val longtitude = IPResponse.longtitude
+                    val latitude = IPResponse.latitude
 
                     IP!!.text = IP
                     hostname!!.text = hostname
-                    continent!!.text = tempe
-                    country!!.text = tempMin
-                    region!!.text = tempMax
-                    city!!.text = humid.toString()
-                    longtitude!!.text = hpa.toString()
-                    latitude!!.text = speed.toString()
+                    continent!!.text = continent
+                    country!!.text = country
+                    region!!.text = region
+                    city!!.text = city
+                    longtitude!!.text = longtitude
+                    latitude!!.text = latitude
                 }
             }
 
