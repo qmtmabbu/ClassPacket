@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
+    weatherTask().execute()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

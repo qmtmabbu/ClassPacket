@@ -24,41 +24,41 @@
     </style>
 
     <!-- Toolbar Background-->
-    <style name="Widget.daloy.Toolbar" parent="Widget.AppCompat.Toolbar">
+    <style name="Widget.classpacket.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorAccent</item>
         <item name="android:theme">@style/AppTheme</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="titleTextAppearance">@style/TextAppearance.daloy.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.classpacket.Toolbar</item>
     </style>
 
     <!-- Toolbar Text -->
-    <style name="TextAppearance.daloy.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+    <style name="TextAppearance.classpacket.Toolbar" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textSize">16sp</item>
     </style>
 
     <!-- Text Input -->
-    <style name="Widget.daloy.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="hintTextAppearance">@style/TextAppearance.daloy.TextInputLayout.HintText</item>
+    <style name="Widget.classpacket.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.classpacket.TextInputLayout.HintText</item>
         <item name="android:paddingBottom">8dp</item>
         <item name="android:textColorHint">?attr/colorPrimaryDark</item>
     </style>
 
     <!-- Hint Text -->
-    <style name="TextAppearance.daloy.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <style name="TextAppearance.classpacket.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-    <style name="Widget.daloy.Button" parent="Widget.MaterialComponents.Button">
+    <style name="Widget.classpacket.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
         <item name="backgroundTint">?attr/colorPrimaryDark</item>
     </style>
 
-    <style name="Widget.daloy.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <style name="Widget.classpacket.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-    <style name="TextAppearance.daloy.Title" parent="TextAppearance.MaterialComponents.Headline4">
+    <style name="TextAppearance.classpacket.Title" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>

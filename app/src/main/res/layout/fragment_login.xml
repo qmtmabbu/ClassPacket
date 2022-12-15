@@ -31,7 +31,7 @@
                 android:src="@drawable/classpacket_logo" />
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.daloy.TextInputLayout"
+                style="@style/Widget.classpacket.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username">
@@ -46,7 +46,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_text_input"
-                style="@style/Widget.daloy.TextInputLayout"
+                style="@style/Widget.classpacket.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -66,7 +66,7 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/next_button"
-                    style="@style/Widget.daloy.Button"
+                    style="@style/Widget.classpacket.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="@{()->myLoginViewModel.loginButton()}"
@@ -76,7 +76,7 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/cancel_button"
-                    style="@style/Widget.daloy.Button"
+                    style="@style/Widget.classpacket.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="12dp"
