@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavView = binding.bottomNavView
 
         val homeFragment = HomeFragment()
-        val IP = IP()
+        val IP = IP ()
 
         setThatFragment(homeFragment)
 
