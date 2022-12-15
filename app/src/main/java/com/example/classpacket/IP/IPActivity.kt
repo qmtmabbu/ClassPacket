@@ -10,7 +10,6 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.text.SimpleDateFormat
 import java.util.*
 
 class IPActivity: AppCompatActivity() {
@@ -94,8 +93,6 @@ class IPActivity: AppCompatActivity() {
     companion object {
         var BaseUrl = "http://api.ipstack.com/"
         var AppId = "a39376440df76d4010fdb31ce741b04c"
-        var lat = "15.44125"
-        var lon = "120.72863"
     }
 
     override fun onSupportNavigateUp(): Boolean {

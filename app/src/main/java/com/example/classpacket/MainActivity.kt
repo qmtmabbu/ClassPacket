@@ -55,14 +55,14 @@ class MainActivity : AppCompatActivity() {
         bottomNavView = binding.bottomNavView
 
         val homeFragment = HomeFragment()
-        val IP = IPActivity ()
+        val IP = IPActivity()
 
         setThatFragment(homeFragment)
 
         bottomNavView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.bottom_nav_home -> {setThatFragment(homeFragment)}
-                R.id.bottom_nav_packet -> {setThatFragment(fragment)}
+                R.id.bottom_nav_packet -> {setThatFragment(IP)}
             }
             true
         }
