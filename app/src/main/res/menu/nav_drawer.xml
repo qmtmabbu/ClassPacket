@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/homeFrag"
+        android:title="Home" />
+    <item
+        android:id="@+id/mapsActivity"
+        android:title="Maps" />
+    <item
+        android:id="@+id/history"
+        android:title="History" />
+    <item
+        android:id="@+id/about"
+        android:title="About" />
+    <item
+        android:id="@+id/faqFrag"
+        android:title="FAQ" />
+    <item
+        android:id="@+id/loginActivity"
+        android:title="Logout" />
+
+</menu>

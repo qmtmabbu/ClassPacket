@@ -6,7 +6,7 @@ import retrofit2.http.Query
 
 
 interface IPService {
-    @GET ("https://ipapi.co/json/")
+    @GET ("192.168.0.104/json/")
     fun getCurrentIPData(
         @Query("ip") ip: String,
         @Query("city") city: String,
